@@ -217,7 +217,6 @@ console.log('Рефакторинг кода');
 let secretNumber = Math.trunc(Math.random() * 10) + 1;
 let score = 3;
 let highScore = 0;
-console.log(secretNumber);
 
 const getGuessMessage = function (message) {
   document.querySelector('.guess-message').textContent = message;
@@ -233,7 +232,6 @@ const getHighScore = function (highScore) {
 
 document.querySelector('.check').addEventListener('click', function () {
   const guessingNumber = Number(document.querySelector('.number-input').value);
-  console.log(guessingNumber, typeof guessingNumber);
 
   if (!guessingNumber) {
     getGuessMessage('Введите число!');
@@ -265,7 +263,6 @@ document.querySelector('.check').addEventListener('click', function () {
 
 document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 10) + 1;
-  console.log(secretNumber);
   score = 3;
 
   getGuessMessage('Начни угадывать!');
