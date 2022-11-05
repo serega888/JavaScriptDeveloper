@@ -76,10 +76,10 @@ main {
 }
 
 .current {
-  background-color: #ee7d05;
+  background-color: #05ee11;
   opacity: 0.8;
   border-radius: 9px;
-  color: #fff;
+  color: #49a79a;
   width: 65%;
   padding: 2rem;
   text-align: center;
@@ -160,7 +160,7 @@ main {
 
 .player--winner .name {
   font-weight: 700;
-  color: #d50b0b;
+  color: #0bd50b;
 }
 
 .hidden {
