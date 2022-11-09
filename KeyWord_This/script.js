@@ -1,38 +1,38 @@
 'use strict';
 // ---------------------------------------------------------------------------------this keyword-------------------------------------------------------------
 
-// console.log(this);
+console.log(this);
 
-// const getAge = function (MybirthYear) {
-//   console.log(2021 - MybirthYear);
-//   console.log(this);
-// };
+const getAgeKeyWordThis = function (MybirthYearKeyWordThis) {
+  console.log(2022 - MybirthYearKeyWordThis);
+  console.log(this);
+};
 
-// getAge(2001);
+getAgeKeyWordThis(2001);
 
-// const getAgeArr = MybirthYear => {
-//   console.log(2021 - MybirthYear);
-//   console.log(this);
-// };
+const getAgeKeyWordThisArr = MybirthYearKeyWordThis => {
+  console.log(2021 - MybirthYearKeyWordThis);
+  console.log(this);
+};
 
-// getAgeArr(2001);
+getAgeKeyWordThisArr(2001);
 
-// const user187 = {
-//   MybirthYear: 1974,
-//   getAge: function () {
-//     console.log(this);
-//     console.log(2021 - this.MybirthYear);
-//   },
-// };
+const userKeyWordThis387 = {
+  MybirthYearKeyWordThis: 1992,
+  getAgeKeyWordThis: function () {
+    console.log(this);
+    console.log(2022 - this.MybirthYearKeyWordThis);
+  },
+};
 
-// user187.getAge();
+userKeyWordThis387.getAgeKeyWordThis();
 
-// const user188 = {
-//   MybirthYear: 2002,
-// };
+const userKeyWordThis388 = {
+  MybirthYearKeyWordThis: 2002,
+};
 
-// user188.getAge = user187.getAge;
-// user188.getAge();
+userKeyWordThis388.getAgeKeyWordThis = userKeyWordThis387.getAgeKeyWordThis;
+userKeyWordThis388.getAgeKeyWordThis();
 
-// const f = user187.getAge;
-// f();
+const f = userKeyWordThis387.getAgeKeyWordThis;
+f();
