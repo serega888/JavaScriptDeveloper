@@ -1,50 +1,50 @@
 'use strict';
-// // -----------------------------------------------------------------------------------Hoisting-------------------------------------------------------------
+// -----------------------------------------------------------------------------------Hoisting-------------------------------------------------------------
 
-// // --------------Variables Hoisting
-// console.log(firstName);
-// // console.log(job);
-// // console.log(MybirthYear);
+// --------------Variables Hoisting
+console.log(firstNameHoisting);
+// console.log(jobHoisting);
+// console.log(MybirthYearHoisting);
 
-// var firstName = 'YouRa';
-// let job = 'programmer';
-// const MybirthYear = 1974;
+var firstNameHoisting = 'Sergey';
+let jobHoisting = 'programmer';
+const MybirthYearHoisting = 1992;
 
-// // -------------Functions Hoisting
+// -------------Functions Hoisting
 
-// console.log(declSum(1, 2));
-// // console.log(exprSum(1, 2));
-// console.log(arrSum);
-// // console.log(arrSum(1, 2));
+console.log(declSumHoisting(1, 2));
+// console.log(exprSumHoisting(1, 2));
+console.log(arrSumHoisting);
+// console.log(arrSumHoisting(1, 2));
 
-// function declSum(a, b) {
-//   return a + b;
-// }
+function declSumHoisting(a, b) {
+  return a + b;
+}
 
-// const exprSum = function (a, b) {
-//   return a + b;
-// };
+const exprSumHoisting = function (a, b) {
+  return a + b;
+};
 
-// var arrSum = (a, b) => a + b;
+var arrSumHoisting = (a, b) => a + b;
 
-// // Example Hoisting
+// Example Hoisting
 
-// console.log(isUserValid);
+console.log(isUserValidHoisting);
 
-// if (!isUserValid) {
-//   deleteUser();
-// }
+if (!isUserValidHoisting) {
+  deleteUserHoisting();
+}
 
-// var isUserValid = true;
+var isUserValidHoisting = true;
 
-// function deleteUser() {
-//   console.log('User is deleted!');
-// }
+function deleteUserHoisting() {
+  console.log('User is deleted!');
+}
 
-// var a = 1;
-// let b = 2;
-// const c = 3;
+var a = 1;
+let b = 2;
+const c = 3;
 
-// console.log(a === window.a);
-// console.log(b === window.b);
-// console.log(c === window.c);
+console.log(a === window.a);
+console.log(b === window.b);
+console.log(c === window.c);
