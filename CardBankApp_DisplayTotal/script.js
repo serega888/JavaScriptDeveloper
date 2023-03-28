@@ -190,7 +190,8 @@ const displayTotal = function (transactions) {
       return interestT >= 100;
     })
     .reduce((acc, interestT) => acc + interestT, 0);
-  console.log(interestTotal);
+  // console.log(interestTotal);
+  labelSumInterest.textContent = `${interestTotal}$`;
 };
 
 displayTotal(account1.transactions);
