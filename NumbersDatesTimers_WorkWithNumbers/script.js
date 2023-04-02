@@ -3,13 +3,62 @@
 //-------------------------------------------------work with numbers-------------------------------------
 //----------------------------------------- Преобразование И Проверка Чисел
 
-console.log('11 === 11.0', 11 === 11.0); // true
+console.log('11 === 11.0', 11 === 11.0, typeof (11 === 11.0)); // true
 
 //----------------------------------10 - 0-9; 1 / 10 = 0.1; 10 / 3 = 3.33333333---------------
 //-----------------------------------------2 - 0, 1--------------------
-console.log('0.1 + 0.2 = ', 0.1 + 0.2); // 0.30000000000000004
-console.log('0.1 + 0.2 === 0.3', 0.1 + 0.2 === 0.3); // false
-console.log(Number.parseFloat('0.1$') + Number.parseFloat('0.2$')); // 0.30000000000000004
+console.log('0.1 + 0.2 = ', 0.1 + 0.2, typeof (0.1 + 0.2)); // 0.30000000000000004  number
+
+console.log(
+  '(0.1 + 0.2).toFixed(1)',
+  (0.1 + 0.2).toFixed(1),
+  typeof (0.1 + 0.2).toFixed(1)
+); // 0.3   string
+
+console.log(
+  '+(0.1 + 0.2).toFixed(1)',
+  +(0.1 + 0.2).toFixed(1),
+  typeof +(0.1 + 0.2).toFixed(1)
+); // 0.3   number
+
+console.log(
+  'Number.parseFloat((0.1 + 0.2).toFixed(1))',
+  Number.parseFloat((0.1 + 0.2).toFixed(1)),
+  typeof Number.parseFloat((0.1 + 0.2).toFixed(1))
+); // 0.3   number
+
+console.log('-------------------------');
+console.log('0.1 + 0.2 === 0.3', 0.1 + 0.2 === 0.3, typeof (0.1 + 0.2 === 0.3)); // false
+
+console.log(
+  '(0.1 + 0.2).toFixed(1) === 0.3',
+  (0.1 + 0.2).toFixed(1) === 0.3,
+  typeof ((0.1 + 0.2).toFixed(1) === 0.3)
+); // false
+
+console.log(
+  '+(0.1 + 0.2).toFixed(1) === 0.3',
+  +(0.1 + 0.2).toFixed(1) === 0.3,
+  typeof (+(0.1 + 0.2).toFixed(1) === 0.3)
+); // true
+
+console.log(
+  'Number.parseFloat((0.1 + 0.2).toFixed(1)) === 0.3',
+  Number.parseFloat((0.1 + 0.2).toFixed(1)) === 0.3,
+  typeof (Number.parseFloat((0.1 + 0.2).toFixed(1)) === 0.3)
+); // true
+
+console.log(
+  "Number.parseFloat('0.1$') + Number.parseFloat('0.2$')",
+  Number.parseFloat('0.1$') + Number.parseFloat('0.2$'),
+  typeof (Number.parseFloat('0.1$') + Number.parseFloat('0.2$'))
+); // 0.30000000000000004
+
+console.log(
+  "+(Number.parseFloat('0.1$') + Number.parseFloat('0.2$')).toFixed(1)",
+  +(Number.parseFloat('0.1$') + Number.parseFloat('0.2$')).toFixed(1),
+  typeof +(Number.parseFloat('0.1$') + Number.parseFloat('0.2$')).toFixed(1)
+); // 0.3
 
 //-------------------------------------------Converting strings to numbers-------------------
 console.log("Number('11')", Number('11'), typeof Number('11'));
