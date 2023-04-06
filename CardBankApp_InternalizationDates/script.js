@@ -42,7 +42,7 @@ const account2 = {
     '2023-03-25T16:21:20.814Z',
   ],
   currency: 'USD',
-  locale: 'en-US',
+  locale: 'de-DE',
 };
 
 const account3 = {
@@ -96,7 +96,7 @@ const account5 = {
     '2023-03-28T10:14:06.486Z',
   ],
   currency: 'USD',
-  locale: 'en-US',
+  locale: 'zh-CN',
 };
 
 const dateNow = new Date();
